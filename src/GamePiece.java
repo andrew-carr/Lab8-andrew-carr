@@ -1,4 +1,4 @@
 
-public class GamePiece {
+public enum GamePiece {
 
 }
