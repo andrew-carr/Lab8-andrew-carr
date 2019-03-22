@@ -7,50 +7,50 @@ public class GamePieceTest {
 	public void getColorTest()
 	{
 		//RED_RACER
-		Assert.assertEquals("GamePiece getColor incorrect", Color.RED, GamePiece.RED_RACER.getColor);
+		Assert.assertEquals("GamePiece getColor incorrect", Color.RED, GamePiece.RED_RACER.getColor());
 		
 		//BLUE_RACER
-		Assert.assertEquals("GamePiece getColor incorrect", Color.BLUE, GamePiece.BLUE_RACER.getColor);
+		Assert.assertEquals("GamePiece getColor incorrect", Color.BLUE, GamePiece.BLUE_RACER.getColor());
 		
 		//MAGENTA_RACER
-		Assert.assertEquals("GamePiece getColor incorrect", Color.MAGENTA, GamePiece.MAGENTA_RACER.getColor);
+		Assert.assertEquals("GamePiece getColor incorrect", Color.MAGENTA, GamePiece.MAGENTA_RACER.getColor());
 		
 		//RED_THIMBLE
-		Assert.assertEquals("GamePiece getColor incorrect", Color.RED, GamePiece.RED_THIMBLE.getColor);
+		Assert.assertEquals("GamePiece getColor incorrect", Color.RED, GamePiece.RED_THIMBLE.getColor());
 		
 		//BLUE_BOOT
-		Assert.assertEquals("GamePiece getColor incorrect", Color.BLUE, GamePiece.BLUE_BOOT.getColor);
+		Assert.assertEquals("GamePiece getColor incorrect", Color.BLUE, GamePiece.BLUE_BOOT.getColor());
 		
 		//GREEN_BOOT
-		Assert.assertEquals("GamePiece getColor incorrect", Color.GREEN, GamePiece.GREEN_BOOT.getColor);
+		Assert.assertEquals("GamePiece getColor incorrect", Color.GREEN, GamePiece.GREEN_BOOT.getColor());
 		
 		//YELLOW_BOOT
-		Assert.assertEquals("GamePiece getColor incorrect", Color.YELLOW, GamePiece.YELLOW_BOOT.getColor);
+		Assert.assertEquals("GamePiece getColor incorrect", Color.YELLOW, GamePiece.YELLOW_BOOT.getColor());
 	}
 	
 	@Test
 	public void getShapeTest()
 	{
 		//RED_RACER
-		Assert.assertEquals("GamePiece getShape incorrect", Shape.RACER, GamePiece.RED_RACER.getShape);
+		Assert.assertEquals("GamePiece getShape incorrect", Shape.RACECAR, GamePiece.RED_RACER.getShape());
 				
 		//BLUE_RACER
-		Assert.assertEquals("GamePiece getShape incorrect", Shape.RACER, GamePiece.BLUE_RACER.getShape);
+		Assert.assertEquals("GamePiece getShape incorrect", Shape.RACECAR, GamePiece.BLUE_RACER.getShape());
 				
 		//MAGENTA_RACER
-		Assert.assertEquals("GamePiece getShape incorrect", Shape.RACER, GamePiece.MAGENTA_RACER.getShape);
+		Assert.assertEquals("GamePiece getShape incorrect", Shape.RACECAR, GamePiece.MAGENTA_RACER.getShape());
 				
 		//RED_THIMBLE
-		Assert.assertEquals("GamePiece getShape incorrect", Shape.THIMBLE, GamePiece.RED_THIMBLE.getShape);
+		Assert.assertEquals("GamePiece getShape incorrect", Shape.THIMBLE, GamePiece.RED_THIMBLE.getShape());
 				
 		//BLUE_BOOT
-		Assert.assertEquals("GamePiece getShape incorrect", Shape.BOOT, GamePiece.BLUE_BOOT.getShape);
+		Assert.assertEquals("GamePiece getShape incorrect", Shape.BOOT, GamePiece.BLUE_BOOT.getShape());
 				
 		//GREEN_BOOT
-		Assert.assertEquals("GamePiece getShape incorrect", Shape.BOOT, GamePiece.GREEN_BOOT.getShape);
+		Assert.assertEquals("GamePiece getShape incorrect", Shape.BOOT, GamePiece.GREEN_BOOT.getShape());
 				
 		//YELLOW_BOOT
-		Assert.assertEquals("GamePiece getShape incorrect", Shape.BOOT, GamePiece.YELLOW_BOOT.getShape);
+		Assert.assertEquals("GamePiece getShape incorrect", Shape.BOOT, GamePiece.YELLOW_BOOT.getShape());
 	}
 	
 	@Test
@@ -70,7 +70,7 @@ public class GamePieceTest {
 	@Test
 	public void toStringTest()
 	{
-		Assert.assertEquals("GamePiece toString incorrect", "RED_RACER: a red racer with priority 0",
+		Assert.assertEquals("GamePiece toString incorrect", "RED_RACER: a RED racecar with priority 0",
 				GamePiece.RED_RACER.toString());
 	}
 }
