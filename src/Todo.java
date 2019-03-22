@@ -41,7 +41,7 @@ Estimated Time (minutes):
 
 Actual Time (minutes):
 1. 22
-2. 
+2. 5
 3.
 4.
 5.
