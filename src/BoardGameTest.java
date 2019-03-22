@@ -107,7 +107,7 @@ public class BoardGameTest {
 		expecteds.add(GamePiece.RED_RACER);
 		expecteds.add(GamePiece.YELLOW_BOOT);
 		
-		Assert.assertEquals("BoardGame getGamePiecesAtLocation incorrect", expecteds, bg.getPlayersAtLocation(Location.DINING_ROOM));
+		Assert.assertEquals("BoardGame getGamePiecesAtLocation incorrect", expecteds, bg.getGamePiecesAtLocation(Location.DINING_ROOM));
 	}
 	
 	@Test
@@ -162,7 +162,7 @@ public class BoardGameTest {
 		//getPlayers returns List of players in BoardGame
 		Set<GamePiece> dataSet = new HashSet<GamePiece>(bg.getPlayerPieces());
 		
-		String[] expected = new String[] {GamePiece.RED_RACER, GamePiece.BLUE_RACER, GamePiece.YELLOW_BOOT};
+		GamePiece[] expected = new GamePiece[] {GamePiece.RED_RACER, GamePiece.BLUE_RACER, GamePiece.YELLOW_BOOT};
 		
 		for(int index = 0; index < expected.length; ++index)
 		{
