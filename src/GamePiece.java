@@ -1,4 +1,8 @@
-
+/**
+ * This enum defines specific game pieces and returns information about them
+ * @author andrew
+ *
+ */
 public enum GamePiece {
 
 	BLUE_BOOT(new GamePieceAppearance(Color.BLUE, Shape.BOOT), 5),
@@ -18,16 +22,31 @@ public enum GamePiece {
 		this.priority = priority;
 	}
 	
+	/**
+	 * Gets the color of a GamePiece object
+	 * @return This color
+	 */
 	public Color getColor()
 	{
 		return appearance.getColor();
 	}
 	
+	/**
+	 * Gets the shape of a GamePiece object
+	 * @return This shape
+	 */
 	public Shape getShape() 
 	{
 		return appearance.getShape();
 	}
 	
+	/**
+	 * Compares the priority of two gamePieces and gets the piece with
+	 * the lowest priority
+	 * @param a
+	 * @param b
+	 * @return The GamePiece with the lowest priority
+	 */
 	public static GamePiece movesFirst(GamePiece a, GamePiece b)
 	{
 		if(a.priority < b.priority)
@@ -41,9 +60,13 @@ public enum GamePiece {
 		}
 	}
 	
+	/**
+	 * Formats the information of a GamePiece object: player name, color, shape, and priority
+	 */
+	@Override
 	public String toString()
 	{
 		return String.format("%s: a %s %s with priority %d", this.name(),
-				appearance.getColor().name(), appearance.getShape().toString(), priority);
+				appearance.getColor().name(), appearance.getShape().name(), priority);
 	}
 }

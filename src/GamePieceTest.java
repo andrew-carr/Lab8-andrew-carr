@@ -70,7 +70,7 @@ public class GamePieceTest {
 	@Test
 	public void toStringTest()
 	{
-		Assert.assertEquals("GamePiece toString incorrect", "RED_RACER: a RED racecar with priority 0",
+		Assert.assertEquals("GamePiece toString incorrect", "RED_RACER: a RED RACECAR with priority 0",
 				GamePiece.RED_RACER.toString());
 	}
 }

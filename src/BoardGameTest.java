@@ -52,6 +52,7 @@ public class BoardGameTest {
 	{
 		BoardGame bg = new BoardGame();
 		
+		//second player alphabetically first
 		bg.addPlayer("Scott", GamePiece.RED_RACER, Location.KITCHEN);
 		bg.addPlayer("Ramona", GamePiece.BLUE_RACER, Location.CONSERVATORY);
 		
@@ -59,7 +60,19 @@ public class BoardGameTest {
 		Location[] newLocations = new Location[]{Location.BALLROOM, Location.STUDY};
 		String[] expecteds = new String[]{"Scott", "Ramona"};
 		
-		Assert.assertArrayEquals("BoardGame moveTwoPlayers incorrect", expecteds, bg.moveTwoPlayers(playerNames, newLocations));	
+		Assert.assertArrayEquals("BoardGame moveTwoPlayers incorrect", expecteds, bg.moveTwoPlayers(playerNames, newLocations));
+		
+		//first player alphabetically first
+		BoardGame bg2 = new BoardGame();
+		
+		bg2.addPlayer("Kim", GamePiece.RED_RACER, Location.KITCHEN);
+		bg2.addPlayer("Ramona", GamePiece.BLUE_RACER, Location.CONSERVATORY);
+		
+		String[] playerNames2 = new String[]{"Ramona", "Kim"};
+		Location[] newLocations2 = new Location[]{Location.BALLROOM, Location.STUDY};
+		String[] expecteds2 = new String[]{"Kim", "Ramona"};
+		
+		Assert.assertArrayEquals("BoardGame moveTwoPlayers incorrect", expecteds2, bg2.moveTwoPlayers(playerNames2, newLocations2));
 	}
 	
 	@Test
